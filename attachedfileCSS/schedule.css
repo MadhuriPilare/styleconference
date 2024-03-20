@@ -1,0 +1,420 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+body {
+  background-color: rgb(247, 187, 9);
+  
+  font-family: 'PT Sans', sans-serif;
+}
+header{
+ 
+  color: white;
+}
+
+/* Css for navigation,logo and time-place */
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 8rem;
+
+}
+nav>.rightlogo{
+ font-size: 3rem;
+ font-weight: lighter;
+ border-top: 5px solid #775a01;
+ padding-top: 3rem;
+ 
+}
+.navigation{
+  padding: 6rem;
+}
+nav>.navigation>a{
+ margin-right: 40px;
+ color: white;
+}
+.rightlogo:hover{
+   color: orangered;
+}
+nav>.navigation>a:hover{
+  color: #0644ee;
+  opacity: 0.6;
+}
+.navigation>.date{
+  color: #3e6b8d;
+  font-size: 2rem;
+  
+}
+/* CSS APPLIED FOR TAGLINE USED */
+section>.tagline{
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  color: #4599ed;
+  
+}
+.conference-details>h3{
+  margin: 2rem;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(12, 12, 12);
+  font-weight: 20;
+}
+/* --------REGISTER NOW BUTTON CSS */
+.register{
+  border:1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1.5rem;
+  background-color: #293F50;
+  color: white;   
+  position: absolute;
+  left: 45rem;
+}
+.register:hover{
+  background-color: white;
+  color: black;
+}
+/* CSS FOR IMAGES SECTION ----------- */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+  grid-gap: 50px;
+  margin-right:100px;
+  margin-left:100px;
+  margin-top: 10rem;
+  }
+img{
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom:2rem;
+  margin-top:2rem;
+}
+.Desc{
+  padding-left: 6rem;
+  background-color:#FDE88D;
+  padding-right:5rem;
+  margin-top:2rem;
+  margin-right:-100px;
+  margin-left:-90px;
+  
+}
+.image-title{
+  color:#7b7878;
+  padding-left:8px;
+  padding-top:5rem;
+  font-size:1rem;
+  font-weight:normal;
+  letter-spacing:1px;
+  
+}
+.image-content:hover{
+  color:blue;
+}
+.image-desc{
+  padding: 1rem;
+  font-size:1rem;
+  
+}
+/* CSS APPLIED FOR FOOTER OF THE PAGE */
+.footer-style{
+  color: #191979;
+  
+}
+.footer-nav{  
+  padding-top: 10px;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: space-around;
+
+}
+a{
+  color: #191979;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+a:hover{
+    background-color: orangered;
+    color:white;
+    opacity: 0.5;
+
+}
+@media screen and (max-width: 992px) {
+  body {
+    display: block;
+    text-align: center;
+    background-color: #CBB6A1;
+  }
+}
+
+
+
+
+/* SOME REPEATADELY USED TAGS CSS */
+a{
+    color: aliceblue;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+a:hover{
+    
+      color:#6cb2f3;
+      opacity: 0.5;
+  
+}
+ blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+} 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+h5 {
+	color: #058cf4;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+    padding: 10px;
+}
+
+strong {
+	font-weight: 400;
+    
+}
+
+cite, em {
+	font-style: italic;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/* 
+CSS FOR LINKED PAGES************
+*/
+
+.row, 
+.row-alt {
+  min-width: 960px;
+}
+
+.row {
+  background:#FDE88D; 
+ 
+  padding: 66px 0 44px 0;
+}
+
+.row-alt {
+  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:    -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:         linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background: #F9D342; 
+  padding: 44px 0 22px 0;
+}
+
+
+/*
+CSS APPLIED FOR SPEAKER INFORMATION
+*/
+
+.speaker-info {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-top: 88px;
+	padding-bottom: 22px;
+	text-align: center;
+}
+h2 {
+	font-size: 24px;
+	line-height: 44px;
+    color: #f49912;
+}
+li>a{
+    color:  #f49912;
+    font-size: x-small;
+}
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1-3,
+.col-2-3  {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-3 {
+  width: 33.33%;
+  
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.speaker {
+	margin-bottom: 44px;
+}
+
+.speaker-info>img {
+	height: 100px;
+    width:100px;
+    border-radius: 50%;
+	vertical-align: top;
+	margin-bottom: 22px;
+}
+
+/*
+CSS APPLIED FOR VENUE*********
+*/
+
+.venue-conf {
+	margin-bottom: 66px;
+    text-align: center;
+}
+
+p>a{
+    color: #3e6b8d;
+}
+
+/*
+
+  CSS APPLIES FOR RESTRATION**************
+ 
+*/
+
+form {
+	margin-bottom: 22px;
+}
+
+input, 
+select, 
+textarea {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 22px;
+	font-family: Lato, "Open Sans", Helvetica Neue",
+   Helvetica, Arial, sans-serif;
+}
+
+.register-group label {
+	color: #648880;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.register-group input, 
+.register-group select, 
+.register-group textarea {
+	border: 1px solid #c6c9cc;
+	border-radius: 5px;
+	color: #888;
+	display: block;
+	margin: 5px 0 27px 0;
+	padding: 5px 8px;
+}
+
+.register-group input, 
+.register-group textarea {
+	width: 100%;
+}
+
+.register-group select {
+	height: 34px;
+	width: 60px;
+}
+
+.register-group textarea {
+	height: 78px;
+}
+
+/*
+  
+********STYLE FOR SCHEDULE**********
+
+*/
+
+table {
+  width: 100%;
+  margin: 44px;
+}
+
+table:last-child {
+  margin: 0;
+}
+
+th, 
+td {
+  padding-bottom: 22px;
+  vertical-align: top;
+}
+
+th {
+  padding-right: 45px;
+  text-align: right;
+  width: 20%;
+}
+
+td {
+  width: 40%;
+}
+
+thead {
+  line-height: 44px;
+}
+
+thead th {
+  color: #13a182;
+  font-size: 24px;
+}
+
+tbody th {
+  color: #ff5e00;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 22px;
+  text-transform: uppercase;
+}
+
+tbody td {
+  border-top: 1px solid #010305;
+  padding-top: 21px;
+}
+
+tbody td:first-of-type {
+  padding-right: 15px;
+}
+
+tbody td:last-of-type {
+  padding-left: 15px;
+}
+
+tbody td:only-of-type {
+  padding-left: 0;
+}
+
+table a {
+  color: #9d4f4f;
+}
+
+table h4 {
+  margin-bottom: 0;
+}
+tr:nth-child(even) {
+  background-color: #FBE553;
+}
+
+.schedule-offset {
+  color: #380808;
+}
